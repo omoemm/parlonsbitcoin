@@ -1,5 +1,7 @@
 export default function Footer() {
 	return (
-		<h1>Add the links to media</h1>
+		<footer
+		className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8"
+		>Add the links to media</footer>
 	)
 }

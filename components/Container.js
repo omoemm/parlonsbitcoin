@@ -17,7 +17,7 @@ export default function Container({ children, customMeta }) {
 
 
   return (
-    <div className="bg-yellow-500">
+    <div className="bg-white">
       <Head>
         <title>{meta.title}</title>
         {/* TOOD check the robots are correct */}
@@ -44,7 +44,9 @@ export default function Container({ children, customMeta }) {
       </Head>
 
       <Nav />
+      <main>
       {children}
+      </main>
       <Footer />
     </div>
   )
