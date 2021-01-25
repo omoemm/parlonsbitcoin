@@ -12,7 +12,7 @@ export default function Nav() {
             Épisodes
             </a>
         </NextLink>
-        <NextLink href="/meric">
+        <NextLink href="/merci">
         <a className="p-1 sm:p-4 text-gray-900 dark:text-gray-100">
             👑</a>
         </NextLink>
