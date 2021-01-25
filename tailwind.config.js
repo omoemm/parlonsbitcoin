@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       colors:{
         orange: 'rgb(245, 146, 79)',
-        white: 'rgb(252, 250, 249)',
+        orwhite: 'rgb(252, 250, 249)',
         'light-blue': colors.lightBlue,
         cyan: colors.cyan,
       },

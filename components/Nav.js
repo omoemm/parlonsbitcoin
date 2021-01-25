@@ -8,16 +8,16 @@ export default function Nav() {
       </NextLink>
       <div>
         <NextLink href="/episodes">
-          <a className="mr-6 text-lg font-semibold">
+          <a className="mr-6 text-lg font-bold">
             Épisodes
             </a>
         </NextLink>
         <NextLink href="/merci">
-          <a className="mr-6 text-lg font-semibold">
+          <a className="mr-6 text-lg">
             👑</a>
         </NextLink>
         <NextLink href="/about">
-          <a className="mr-6 text-lg font-semibold">
+          <a className="mr-6 text-lg font-bold">
             À Propos</a>
         </NextLink>
       </div>

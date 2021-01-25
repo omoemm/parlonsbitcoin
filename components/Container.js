@@ -17,7 +17,7 @@ export default function Container({ children, customMeta }) {
 
 
   return (
-    <div className="bg-white">
+    <div className="bg-orwhite">
       <Head>
         <title>{meta.title}</title>
         {/* TOOD check the robots are correct */}
