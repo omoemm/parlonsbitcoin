@@ -62,7 +62,7 @@ function Playground() {
   )
 }
 
-function PodFrame({ src = "https://player.simplecast.com/d91a1288-3a1a-4c3d-863e-2b18d079fc9a?dark=false" }) {
+function PodFrame({ src }) {
   return <iframe height="200px" width="100%" frameBorder="no" scrolling="no" seamless src={src}></iframe>
 }
 
@@ -70,8 +70,7 @@ export default function Home({ latestPodcast }) {
   return (
     <Container>
       <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <h1>Dernier épisode</h1>
-        <PodFrame />
+        <h1>Dernier podcast</h1>
         <PodFrame src={latestPodcast.simplelink}  />
       </div>
       {/* <Playground /> */}

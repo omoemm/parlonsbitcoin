@@ -1,6 +1,6 @@
 import Container from '../components/Container'
 
-export default function Episodes() {
+export default function Podcasts() {
   return (
     <Container>
       <h1>TODO épisodes</h1>

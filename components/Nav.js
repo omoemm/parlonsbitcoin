@@ -7,9 +7,9 @@ export default function Nav() {
         <a className="text-orange text-2xl font-extrabold">Parlons Bitcoin</a>
       </NextLink>
       <div>
-        <NextLink href="/episodes">
+        <NextLink href="/podcasts">
           <a className="mr-6 text-lg font-bold">
-            Épisodes
+            Podcasts
             </a>
         </NextLink>
         <NextLink href="/merci">
