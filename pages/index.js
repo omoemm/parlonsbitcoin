@@ -1,4 +1,5 @@
 import Container from '../components/Container'
+import Quote from '../components/Quote'
 import { getLatestPodcastData } from '../lib/mdx';
 
 function Playground() {
@@ -74,6 +75,7 @@ export default function Home({ latestPodcast }) {
         <PodFrame src={latestPodcast.simplelink}  />
       </div>
       {/* <Playground /> */}
+      <Quote />
     </Container>
   )
 }
