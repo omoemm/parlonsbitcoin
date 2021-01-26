@@ -1,6 +1,7 @@
 import Container from '../components/Container'
 import Quote from '../components/Quote'
 import { getLatestPodcastData } from '../lib/mdx';
+import NextLink from 'next/link'
 
 function Playground() {
   return (
@@ -63,17 +64,24 @@ function Playground() {
   )
 }
 
-function PodFrame({ src }) {
-  return <iframe height="200px" width="100%" frameBorder="no" scrolling="no" seamless src={src}></iframe>
+function PodFrame({ podcast }) {
+  const { simplelink, slug } = podcast
+  return (
+    <div className="flex flex-col justify-center items-center max-w-2xl mx-auto">
+      <iframe height="200px" width="100%" frameBorder="no" scrolling="no" seamless src={simplelink}></iframe>
+      <NextLink href={`/podcasts/${slug}`}>
+        <a className="my-5">
+          Détails du podcast
+        </a>
+      </NextLink>
+    </div>
+  )
 }
 
 export default function Home({ latestPodcast }) {
   return (
     <Container>
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <h1>Dernier podcast</h1>
-        <PodFrame src={latestPodcast.simplelink}  />
-      </div>
+      <PodFrame podcast={latestPodcast} />
       {/* <Playground /> */}
       <Quote />
     </Container>
