@@ -1,4 +1,4 @@
-import { getFiles } from '../../lib/mdx'
+import { getFiles } from 'lib/mdx'
 
 export default function Podcast(podcast) {
   return (

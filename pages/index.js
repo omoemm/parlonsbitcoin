@@ -1,6 +1,6 @@
-import Container from '../components/Container'
-import Quote from '../components/Quote'
-import { getLatestPodcastData } from '../lib/mdx';
+import Container from 'components/Container'
+import Quote from 'components/Quote'
+import { getLatestPodcastData } from 'lib/mdx';
 import NextLink from 'next/link'
 
 function Playground() {
