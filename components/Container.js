@@ -44,7 +44,7 @@ export default function Container(props) {
       </Head>
 
       <Nav />
-      <main>
+      <main className="px-8">
       {children}
       </main>
       <Footer />
