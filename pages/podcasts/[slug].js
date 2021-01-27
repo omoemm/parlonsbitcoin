@@ -1,9 +1,10 @@
-import { getFiles } from 'lib/mdx'
+import { getFiles, getFileBySlug } from 'lib/mdx'
+import hydrate from 'next-mdx-remote/hydrate'
+import PodcastLayout from 'layouts/podcast'
 
-export default function Podcast(podcast) {
-  return (
-    <h1>in progress {podcast.slug}</h1>
-  )
+export default function Podcast({ mdxSource, frontMatter }) {
+  const content = hydrate(mdxSource, {})
+  return <PodcastLayout frontMatter={frontMatter}>{content}</PodcastLayout>
 }
 
 export async function getStaticPaths() {
@@ -11,7 +12,7 @@ export async function getStaticPaths() {
   return {
     paths: podcasts.map(p => ({
       params: {
-        slug: p.replace(/\.mdx/, '')
+        slug: p.replace(/\.mdx/, ''),
       }
     })),
     fallback: false
@@ -19,11 +20,6 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps({ params }) {
-  // TODO find a way to convert a slug to a markdown content
-  // eg. params.slug = 'slug-2'
-  // now pass the content to the Podcast
-  // which itself may separate concerns by letting another
-  // component handle the layout
-  const podcast = params
+  const podcast = await getFileBySlug(params.slug)
   return { props: podcast }
 }

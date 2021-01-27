@@ -4,8 +4,9 @@ import { useRouter } from 'next/router'
 import Footer from '../components/Footer'
 import Nav from '../components/Nav'
 
-export default function Container({ children, customMeta }) {
+export default function Container(props) {
 
+  const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
     title: 'Parlons Bitcoin - Brisons le mythe.',
@@ -14,7 +15,6 @@ export default function Container({ children, customMeta }) {
     type: 'website',
     ...customMeta
   };
-
 
   return (
     <div className="bg-orwhite">
@@ -32,13 +32,13 @@ export default function Container({ children, customMeta }) {
         <meta property="og:image" content={meta.image} />
         {/* TOOD check the twitter cards */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@omoemm" />
+        {/* TOOD add twitter site to the twitter cards */}
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
         {/* TODO check podcast key exist */}
         {meta.date && (
-          <meta property="podcast:published_time" content={meta.date} />
+          <meta property="article:published_time" content={meta.date} />
         )}
         {/* TODO add keywords */}
       </Head>
