@@ -1,4 +1,4 @@
-quotes = [
+const quotes = [
   "To be everywhere is to be nowhere.",
   "It is not the man who has too little who is poor, but the one who hankers after more.",
 ]
