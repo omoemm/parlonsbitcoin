@@ -1,4 +1,5 @@
 import Container from 'components/Container'
+import PodcastPlayer from 'components/PodcastPlayer'
 import Quote from 'components/Quote'
 import { getLatestPodcastData } from 'lib/mdx';
 import NextLink from 'next/link'
@@ -67,14 +68,13 @@ function Playground() {
 function PodFrame({ podcast }) {
   const { simplelink, slug } = podcast
   return (
-    <div className="flex flex-col justify-center items-center max-w-2xl mx-auto">
-      <iframe height="200px" width="100%" frameBorder="no" scrolling="no" seamless src={simplelink}></iframe>
+    <PodcastPlayer simplelink={simplelink}>
       <NextLink href={`/podcasts/${slug}`}>
         <a className="my-5">
           Détails du podcast
         </a>
       </NextLink>
-    </div>
+    </PodcastPlayer>
   )
 }
 

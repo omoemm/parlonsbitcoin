@@ -1,4 +1,5 @@
 import Container from "components/Container";
+import PodcastPlayer from "components/PodcastPlayer";
 
 export default function PodcastLayout({ children, frontMatter }) {
   return (
@@ -10,7 +11,12 @@ export default function PodcastLayout({ children, frontMatter }) {
       date={new Date(frontMatter.date).toISOString()}
       type={"article"}
     >
-      <h1>hello</h1>
+      <PodcastPlayer simplelink={frontMatter.simplelink}/>
+      <article>
+        <h1>
+          {frontMatter.title}
+        </h1>
+      </article>
     </Container>
   )
 }
