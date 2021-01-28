@@ -1,14 +1,16 @@
 import Container from 'components/Container'
+import PodcastsLayout from 'layouts/podcasts'
+import { getPodcastData } from 'lib/mdx'
 
-export default function Podcasts() {
+export default function Podcasts({ podcasts }) {
   return (
     <Container>
-      <h1>TODO épisodes</h1>
-      <div className="grid-cols-3">
-        <p>ep1</p>
-        <p>ep2</p>
-        <p>ep3</p>
-      </div>
+      <PodcastsLayout podcasts={podcasts} />
     </Container>
   )
+}
+
+export async function getStaticProps() {
+  const podcasts = await getPodcastData()
+  return { props: { podcasts } }
 }
