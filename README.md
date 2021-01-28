@@ -2,10 +2,9 @@ Source code of Parlons Bitcoin
 
 # Roadmap
 ## ESSENTIAL
-- [ ] paint content of each podcast on its page
+- [ ] create a grid grouping all podcasts in individual tiles
 
 ## TOENJOYDOING
-- [ ] create a grid grouping all podcasts in individual tiles
 - [ ] add footer links to social
 - [ ] pick a font pair [here](https://fontpair.co/)
 - [ ] validate SEO of the website
@@ -19,3 +18,4 @@ Source code of Parlons Bitcoin
 
 ## DONE
 - [x] add route to each individual podcast
+- [x] paint content of each podcast on its page

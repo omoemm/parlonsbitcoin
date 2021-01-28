@@ -18,7 +18,7 @@ export default function PodcastLayout({ children, frontMatter }) {
         {frontMatter.title}
       </h1>
       <p className="text-sm text-gray-500 min-w-32">
-        publié le {format(parseISO(frontMatter.date), 'dd MMMM yyyy', {locale: fr})}
+        {format(parseISO(frontMatter.date), 'dd MMMM yyyy', {locale: fr})}
       </p>
       <PodcastPlayer simplelink={frontMatter.simplelink}/>
         <div className="prose text-gray-800 max-w-none w-full">
