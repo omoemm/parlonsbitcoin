@@ -1,18 +1,16 @@
-const quotes = [
-  "To be everywhere is to be nowhere.",
-  "It is not the man who has too little who is poor, but the one who hankers after more.",
-  "Think for a long time whether or not you should admit a given person to your friendship. But when you have decided to do so, welcome him heart and soul, and speak as unreservedly with him as you would with yourself.",
-]
+import getRandomQuote from 'lib/quote'
+
 
 export default function Quote() {
-  const author = "Seneca"
-  const quote = "To be everywhere is to be nowhere."
+  const {quote, author} = getRandomQuote()
   return (
-    <>
-      <hr/>
-      <p>{quote}</p>
-      <p>-- {author}</p>
-      <hr/>
-    </>
+    <div>
+      <hr className="max-w-xl mx-auto my-8"/>
+      <div className="prose prose-md mx-auto text-gray-600">
+        <em>{quote}</em> <br />
+        <em className="text-right">– {author}</em>
+      </div>
+      <hr className="max-w-xl mx-auto my-8"/>
+    </div>
   )
 }
