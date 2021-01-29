@@ -2,12 +2,12 @@ import NextLink from 'next/link'
 
 function Card({ podcast }) {
   return (
-    <div className="w-full shadow-lg cursor-pointer bg-white sm:rounded-2xl sm:p-2.5">
+    <div className="w-full shadow-lg  cursor-pointer bg-white rounded-lg sm:rounded-2xl p-1 sm:p-2.5">
       <NextLink href={`/podcasts/${podcast.slug}`}>
         <div className="flex flex-col items-center">
           <div class="relative ">
             <img className="rounded-md" alt='podcast-tile' src={podcast.image} />
-            <p className="text-gray-800 mt-1 text-lg">{podcast.title}</p>
+            <p className="text-gray-600 mt-1 text-lg">{podcast.title}</p>
           </div>
         </div>
       </NextLink>

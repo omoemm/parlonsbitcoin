@@ -20,7 +20,8 @@ export default function PodcastLayout({ children, frontMatter }) {
       <p className="text-sm text-gray-500 min-w-32">
         {format(parseISO(frontMatter.date), 'dd MMMM yyyy', {locale: fr})}
       </p>
-      <PodcastPlayer simplelink={frontMatter.simplelink}/>
+      <PodcastPlayer className="my-4" simplelink={frontMatter.simplelink}/>
+
         <div className="prose text-gray-800 max-w-none w-full">
           {children}
         </div>
