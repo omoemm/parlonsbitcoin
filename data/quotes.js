@@ -1,50 +1,41 @@
 const quotes = {
   Sénèque: [
     "Être partout à la fois, c'est être nulle part.",
-    "Ce n'est pas l'homme qui a peu qui est pauvre, mais celui qui en veut davantage.",
+    "Ce n'est pas l'homme avec peu qui est pauvre, mais celui qui veut davantage.",
     "Considère pendant un long moment l'idée  d'admettre une personne dans ton amitié. Mais lorsque tu as décidé de le faire, accueille la avec coeur et âme, et parle avec elle sans réserve comme tu le ferais avec toi-même.",
-    "Cela me rappèle quelque chose que j'ai entendu à Pomponius. ‘Certains hommes se sont tant enfermés dans des coins sombres que les objets à la lumière du jour leur paraissent assez flous.’",
+    "Cela me rappèle quelque chose que j'ai entendu à Pomponius. ‘Certains hommes se sont enfermés dans des coins si sombres que les objets à la lumière du jour leur paraissent flous.’",
     "Les gens devraient admirer notre manière de vivre mais ils devraient en même temps la trouver compréhensible.",
-    "Je vois avec plaisir et approuve la manière que tu as de rester à tes études et de sacrifier tout à tes efforts résolus pour faire de toi chaque jour un homme meilleur.",
+    "Je vois avec plaisir et approuve la manière que tu as de rester à tes études et de sacrifier tout à tes efforts résolus pour faire de toi un homme meilleur chaque jour.",
     "Quiconque pénètre notre foyer, devrait nous admirer nous plutôt que nos meubles.",
-    // TODO translate the rest
-    "Something that I noticed in the Stoic writer Hecato. Limiting one’s desires actually helps to cure one of fear. ‘Cease to hope,’ he says, ‘and you will cease to fear.’",
-    "Fear keeps pace with hope. Nor does their so moving together surprise me; both belong to a mind in suspense, to a mind in a state of anxiety through looking into the future.",
-    "If wisdom were offered me on the one condition that I should keep it shut away and not divulge it to anyone, I should reject it.",
-    "There is no enjoying the possession of anything valuable unless one has someone to share it with.",
-    "Men learn as they teach.",
-    "Equally good is the answer given by the person, whoever it was (his identity is uncertain), who when asked what was the object of all the trouble he took over a piece of craftsmanship when it would never reach more than a very few people, replied: ‘A few is enough for me; so is one; and so is none.’",
-    "The many speak highly of you, but have you really any grounds for satisfaction with yourself if you are the kind of person the many understand? Your merits should not be outward facing.",
-    "I’m still turning over the pages of Epicurus, and the following saying, one I read today, comes from him: ‘To win true freedom you must be a slave to philosophy.’ A person who surrenders and subjects himself to her doesn’t have his application deferred from day to day; he’s emancipated on the spot, the very service of philosophy being freedom.",
-    "The ending inevitably matches the beginning: a person who starts being friends with you because it pays him will similarly cease to be friends because it pays him to do so.",
-    "To procure friendship only for better and not for worse is to rob it of all its dignity.",
-    "The wise man needs hands and eyes and a great number of things that are required for the purposes of day-to-day life; but he lacks nothing, for lacking something implies that it is a necessity and nothing, to the wise man, is a necessity.",
+    "Une chose que j'ai remarquée avec l'auteur stoïque Hecato. Limiter ses désirs aide véritablement à guérir la peur.‘Cesse d'espérer’, dit-il, ‘et tu cesseras d'avoir peur.’",
+    "La peur marche à l'unisson avec l'espoir. Leur relation ne me surprend pas, les deux appartiennent à un esprit en suspens, à un esprit anxieux de son regard vers le futur.",
+    "Si la sagesse m'était offerte à la seule condition que je doive la garder pour moi seul et ne la divulguer à quiconque, je la rejetterais.",
+    "Il n'y a aucun plaisir à posséder quelque chose de valeur sans avoir quelqu'un avec qui la partager.",
+    "Les Hommes apprenent en enseignant.",
+    "Tout aussi bonne est la réponse de l'artiste à qui l'on demande pourquoi se donner tout ce trouble: ‘Quelques personnes pour apprécier mon art sont suffisantes pour moi; une personne l'est également; aucune personne, c'est également suffisant.’",
+    "La fin ressemble inévitablement au début: une personne qui démarre une amitié parce que ça lui profite cessera d'être amie lorsque cela ne lui profite plus.",
+    "Offir son amitié seulement pour le meilleur mais pas pour le pire, c'est la dépouiller de toute dignité.",
+    "L'homme sage a besoin de mains, de ses yeux et d'un grand nombre de choses requises pour la vie de tous les jours; mais il ne manque de rien, car manquer de quelque chose signifie que c'est une nécessite et rien, à l'homme sage, n'est une nécessité.",
   ],
   "Lao Tzu": [
     "Le sage n'entreprend jamais de grandes choses, ainsi il les accomplit.",
     "La Nature ne se hâte en rien, pourtant tout est accompli.",
   ],
   "Joseph Campbell": [
-    `Follow your bliss.
-    If you do follow your bliss,
-    you put yourself on a kind of track
-    that has been there all the while waiting for you,
-    and the life you ought to be living
-    is the one you are living.
-    When you can see that,
-    you begin to meet people
-    who are in the field of your bliss,
-    and they open the doors to you.
-    I say, follow your bliss and don't be afraid,
-    and doors will open
-    where you didn't know they were going to be.
-    If you follow your bliss,
-    doors will open for you that wouldn't have opened for anyone else.`
+    `Suis ta voie. Si tu suis ta voie, tu te places sur un chemin qui a toujours été là à t'attendre, et la vie que tu devrais de vivre est celle que tu vis. Lorsque tu es capable de la voir, tu commences à rencontrer des gens qui sont dans le champ de ta voie, et ils ouvrent des portes pour toi. Je dis, suis ta voie et ne sois pas appeuré, les portes s'ouvriront là où tu ne savais pas qu'elles étaient. Si tu suis ta voie, des portes s'ouvriront pour toi qui ne se seraient ouvertes pour nul autre.`
+  ],
+  Epicure: [
+    "Tout homme qui ne pense pas que ce qu'il a est amplement suffisant est un homme malheureux, même s'il est maître du monde.",
   ]
 }
 
+// TODO correct distribution
+// pick a random integer at intialization
+// then on each re-render increase it
+// list all the quotes in an array
+// the array is a collection of {quote:"text",author:"Seneca"}
+// to make things easy I can keep the structure above and create it dynamically
 const authors = Object.keys(quotes)
-
 export const reversedQuotes = authors.reduce((prev, author) => {
   const authorByQuotes = quotes[author].map((q) => ({ [q]: author }))
   const next = prev.concat(authorByQuotes)
