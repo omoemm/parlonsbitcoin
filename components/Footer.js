@@ -20,12 +20,15 @@ const Spotify = () => (
 
 export default function Footer() {
 	return (
-		<footer className="flex flex-col items-center border-t border-gray-200 max-w-2xl mx-auto w-full mb-8">
-			<hr className="w-full border-1 border-gray-200 mb-8" />
-			<a className="bg-orange hover:bg-orwhite hover:text-orange text-orwhite font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0 rounded-md hover:shadow-sm shadow-md">Laisse moi un message 💌</a>
+		<footer className="flex flex-col items-center border-t border-gray-200 max-w-2xl mx-auto w-full mb-8 space-y-4">
+			<hr className="w-full border-1 border-gray-200 mb-4" />
+			<a
+				className="bg-orange hover:bg-orwhite hover:text-orange text-orwhite font-bold py-3 px-12 lg:px-8 duration-200 transition-colors mb-6 lg:mb-0 rounded-md hover:shadow-sm shadow-md">
+				Laisse moi un message 💌
+			</a>
 			<div className="flex flex-row justify-center items-center space-x-4">
 				<ExternalLink>Youtube</ExternalLink>
-				<ExternalLink><Spotify/></ExternalLink>
+				<ExternalLink><Spotify /></ExternalLink>
 				<ExternalLink>Apple Podcasts</ExternalLink>
 				<ExternalLink>Instagram</ExternalLink>
 				<ExternalLink href="https://twitter.com/omoemm_">Twitter</ExternalLink>

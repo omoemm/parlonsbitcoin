@@ -9,11 +9,11 @@ import NextLink from 'next/link'
 function PodFrame({ podcast }) {
   const { simplelink, slug } = podcast
   return (
-    <div className="flex flex-col justify-center items-center max-w-2xl mx-auto mb-8">
+    <div className="flex flex-col justify-center items-center max-w-2xl w-full mx-auto mb-4">
       <PodcastPlayer simplelink={simplelink} />
       <NextLink href={`/podcasts/${slug}`}>
-        <a className="my-5">
-          Détails du podcast
+        <a className="hover:shadow my-3 border border-gray-200 rounded px-8 py-4">
+          📝 Plus de détails sur ce podcast
         </a>
       </NextLink>
     </div>

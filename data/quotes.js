@@ -7,7 +7,7 @@ const quotesByAuthor = {
     "Les gens devraient admirer notre manière de vivre mais ils devraient en même temps la trouver compréhensible.",
     "Je vois avec plaisir et approuve la manière que tu as de rester à tes études et de sacrifier tout à tes efforts résolus pour faire de toi un homme meilleur chaque jour.",
     "Quiconque pénètre notre foyer, devrait nous admirer nous plutôt que nos meubles.",
-    "Une chose que j'ai remarquée avec l'auteur stoïque Hecato. Limiter ses désirs aide véritablement à guérir la peur.‘Cesse d'espérer’, dit-il, ‘et tu cesseras d'avoir peur.’",
+    "Une chose que j'ai remarquée avec l'auteur stoïque Hecato. Limiter ses désirs aide véritablement à guérir la peur. ‘Cesse d'espérer’, dit-il, ‘et tu cesseras d'avoir peur.’",
     "La peur marche à l'unisson avec l'espoir. Leur relation ne me surprend pas, les deux appartiennent à un esprit en suspens, à un esprit anxieux de son regard vers le futur.",
     "Si la sagesse m'était offerte à la seule condition que je doive la garder pour moi seul et ne la divulguer à quiconque, je la rejetterais.",
     "Il n'y a aucun plaisir à posséder quelque chose de valeur sans avoir quelqu'un avec qui la partager.",

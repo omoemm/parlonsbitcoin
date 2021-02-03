@@ -13,7 +13,7 @@ export default function PodcastLayout({ children, frontMatter }) {
       date={new Date(frontMatter.date).toISOString()}
       type={"article"}
     >
-      <article className="flex flex-col justify-center items-start max-w-3xl mx-auto w-full">
+      <article className="flex flex-col justify-center items-start max-w-2xl mx-auto w-full mb-8">
       <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4">
         {frontMatter.title}
       </h1>

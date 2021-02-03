@@ -8,7 +8,7 @@ function Card({ podcast }) {
     <div
     onMouseEnter={() => setIsDescriptionShown(true)}
     onMouseLeave={() => setIsDescriptionShown(false)}
-    className="w-full shadow-lg  cursor-pointer  bg-white rounded-lg sm:rounded-2xl p-1 sm:p-2.5 hover:shadow-md">
+    className="w-full shadow-lg  mb-8 cursor-pointer  bg-white rounded-lg sm:rounded-2xl p-1 sm:p-2.5 hover:shadow-md">
       <NextLink href={`/podcasts/${podcast.slug}`}>
         <div className="flex flex-col  items-center">
           <img className="rounded-md" alt='podcast-tile' src={podcast.image} />
