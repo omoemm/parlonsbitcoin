@@ -16,6 +16,7 @@ const quotesByAuthor = {
     "La fin ressemble inévitablement au début: une personne qui démarre une amitié parce que ça lui profite cessera d'être amie lorsque cela ne lui profite plus.",
     "Offir son amitié seulement pour le meilleur mais pas pour le pire, c'est la dépouiller de toute dignité.",
     "L'homme sage a besoin de ses mains, de ses yeux et d'un grand nombre de choses requises pour la vie de tous les jours; mais il ne manque de rien, car manquer de quelque chose signifie que c'est une nécessite et rien, à l'homme sage, n'est une nécessité.",
+    "Non heureux est celui qui pense cela de lui-même.",
   ],
   "Lao Tzu": [
     "Le sage n'entreprend jamais de grandes choses, ainsi il les accomplit.",
