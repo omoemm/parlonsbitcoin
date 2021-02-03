@@ -1,9 +1,9 @@
-const quotes = {
+const quotesByAuthor = {
   Sénèque: [
     "Être partout à la fois, c'est être nulle part.",
     "Ce n'est pas l'homme avec peu qui est pauvre, mais celui qui veut davantage.",
     "Considère pendant un long moment l'idée  d'admettre une personne dans ton amitié. Mais lorsque tu as décidé de le faire, accueille la avec coeur et âme, et parle avec elle sans réserve comme tu le ferais avec toi-même.",
-    "Cela me rappèle quelque chose que j'ai entendu à Pomponius. ‘Certains hommes se sont enfermés dans des coins si sombres que les objets à la lumière du jour leur paraissent flous.’",
+    "Cela me rappèle cette chose que j'ai entendue à Pomponius. ‘Certains hommes se sont enfermés dans des coins si sombres que les objets à la lumière du jour leur paraissent flous.’",
     "Les gens devraient admirer notre manière de vivre mais ils devraient en même temps la trouver compréhensible.",
     "Je vois avec plaisir et approuve la manière que tu as de rester à tes études et de sacrifier tout à tes efforts résolus pour faire de toi un homme meilleur chaque jour.",
     "Quiconque pénètre notre foyer, devrait nous admirer nous plutôt que nos meubles.",
@@ -15,7 +15,7 @@ const quotes = {
     "Tout aussi bonne est la réponse de l'artiste à qui l'on demande pourquoi se donner tout ce trouble: ‘Quelques personnes pour apprécier mon art sont suffisantes pour moi; une personne l'est également; aucune personne, c'est également suffisant.’",
     "La fin ressemble inévitablement au début: une personne qui démarre une amitié parce que ça lui profite cessera d'être amie lorsque cela ne lui profite plus.",
     "Offir son amitié seulement pour le meilleur mais pas pour le pire, c'est la dépouiller de toute dignité.",
-    "L'homme sage a besoin de mains, de ses yeux et d'un grand nombre de choses requises pour la vie de tous les jours; mais il ne manque de rien, car manquer de quelque chose signifie que c'est une nécessite et rien, à l'homme sage, n'est une nécessité.",
+    "L'homme sage a besoin de ses mains, de ses yeux et d'un grand nombre de choses requises pour la vie de tous les jours; mais il ne manque de rien, car manquer de quelque chose signifie que c'est une nécessite et rien, à l'homme sage, n'est une nécessité.",
   ],
   "Lao Tzu": [
     "Le sage n'entreprend jamais de grandes choses, ainsi il les accomplit.",
@@ -29,15 +29,11 @@ const quotes = {
   ]
 }
 
-// TODO correct distribution
-// pick a random integer at intialization
-// then on each re-render increase it
-// list all the quotes in an array
-// the array is a collection of {quote:"text",author:"Seneca"}
-// to make things easy I can keep the structure above and create it dynamically
-const authors = Object.keys(quotes)
-export const reversedQuotes = authors.reduce((prev, author) => {
-  const authorByQuotes = quotes[author].map((q) => ({ [q]: author }))
-  const next = prev.concat(authorByQuotes)
+const authors = Object.keys(quotesByAuthor)
+const quotes = authors.reduce((prev, author) => {
+  const currentQuotes = quotesByAuthor[author].map((quote) => ({ quote, author }))
+  const next = prev.concat(currentQuotes)
   return next
 }, [])
+
+export default quotes

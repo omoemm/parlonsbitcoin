@@ -2,10 +2,9 @@ Source code of Parlons Bitcoin
 
 # Roadmap
 ## ESSENTIAL
-- [ ] add a randomized quote generator
+- [ ] add footer links to social
 
 ## TOENJOYDOING
-- [ ] add footer links to social
 - [ ] pick a font pair [here](https://fontpair.co/)
 - [ ] validate SEO of the website
 - [ ] make the site beautiful -> learn how to kill it with tailwind
@@ -19,3 +18,4 @@ Source code of Parlons Bitcoin
 - [x] add route to each individual podcast
 - [x] paint content of each podcast on its page
 - [x] create a grid grouping all podcasts in individual tiles
+- [x] add a randomized quote generator
