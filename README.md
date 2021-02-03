@@ -13,6 +13,8 @@ Source code of Parlons Bitcoin
 - [ ] write content of Merci
 - [ ] offer to choose a category: Bitcoin/Stoicism
 - [ ] add a button to show the notes of the first episode on home page
+- [ ] add a newsletter subscribe feature
+- [ ] add a leave a message feature
 
 ## DONE
 - [x] add route to each individual podcast
