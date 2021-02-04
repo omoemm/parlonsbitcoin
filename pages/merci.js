@@ -1,4 +1,6 @@
 import Container from 'components/Container'
+import contributors from 'data/contributors'
+import React from 'react'
 
 function MusicPlayer() {
   return (
@@ -7,12 +9,15 @@ function MusicPlayer() {
 }
 
 function HallOfFame() {
+  // const [contributors, setContributors] = React.useState(contributors)
+
   return (
     <>
       <h2 className="font-bold text-lg md:text-3xl tracking-tight my-4">Mur de Gloire <p className="font-normal text-sm text-gray-500">un commentaire, une 👑</p></h2>
-
       <h2 className="text-2xl my-3">👑👑</h2>
+      {contributors["👑👑"]}
       <h2 className="text-2xl my-3">👑</h2>
+      {contributors["👑"]}
     </>
   )
 }
@@ -27,7 +32,7 @@ export default function Merci() {
         </p>
         <p className="text-gray-900 mb-2">À commencer par la musique créée par <a target="_blank" className="text-orange underline font-semibold" href="https://nottyvondutch.wixsite.com/portal/music">Notty VonDutch</a> 🎶</p>
         <MusicPlayer />
-        <p className="text-gray-900 mb-2">Un énorme merci à toutes celles et ceux qui m'ont partagé leurs commentaires pour que je puisse me corriger de podcast en podcast.</p>
+        <p className="text-gray-900 mb-2">Un énorme merci à toutes celles et ceux qui m'ont partagé leurs commentaires pour que chaque podcast soit meilleur que le précédent.</p>
 
         <p className="text-gray-900 mb-2">Vous avez dûment mérité votre place sur le Mur de Gloire 🌟</p>
         <HallOfFame/>
