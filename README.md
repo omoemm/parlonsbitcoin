@@ -2,7 +2,7 @@ Source code of Parlons Bitcoin
 
 # Roadmap
 ## ESSENTIAL
-- [ ] add footer links to social
+
 
 ## TOENJOYDOING
 - [ ] pick a font pair [here](https://fontpair.co/)
@@ -15,7 +15,7 @@ Source code of Parlons Bitcoin
 - [ ] add a button to show the notes of the first episode on home page
 - [ ] add a newsletter subscribe feature
 - [ ] add a leave a message feature
-
+- [ ] add links to social
 ## DONE
 - [x] add route to each individual podcast
 - [x] paint content of each podcast on its page

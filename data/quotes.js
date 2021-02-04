@@ -12,11 +12,12 @@ const quotesByAuthor = {
     "Si la sagesse m'était offerte à la seule condition que je doive la garder pour moi seul et ne la divulguer à quiconque, je la rejetterais.",
     "Il n'y a aucun plaisir à posséder quelque chose de valeur sans avoir quelqu'un avec qui la partager.",
     "Les Hommes apprenent en enseignant.",
-    "Tout aussi bonne est la réponse de l'artiste à qui l'on demande pourquoi se donner tout ce trouble: ‘Quelques personnes pour apprécier mon art sont suffisantes pour moi; une personne l'est également; aucune personne, c'est également suffisant.’",
+    "Tout aussi bonne est la réponse de l'artiste à qui l'on demande pourquoi se donner tout ce trouble: ‘Quelques personnes pour apprécier mon art sont suffisantes pour moi; une personne l'est également; et personne, c'est également suffisant.’",
     "La fin ressemble inévitablement au début: une personne qui démarre une amitié parce que ça lui profite cessera d'être amie lorsque cela ne lui profite plus.",
     "Offir son amitié seulement pour le meilleur mais pas pour le pire, c'est la dépouiller de toute dignité.",
     "L'homme sage (...) ne manque de rien, car manquer de quelque chose signifie que cette chose une nécessite et rien, à l'homme sage, n'est une nécessité.",
     "Non heureux est celui qui pense cela de lui-même.",
+    "Eh bien nous devrions chérir le vieil âge et le savourer. Il est plein de plaisir si tu sais comment l'utiliser. Les fruits sont les savoureux à la fin de la saison."
   ],
   "Lao Tzu": [
     "Le sage n'entreprend jamais de grandes choses, ainsi il les accomplit.",
