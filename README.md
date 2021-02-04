@@ -2,7 +2,7 @@ Source code of Parlons Bitcoin
 
 # Roadmap
 ## ESSENTIAL
-
+- [ ] write content of Merci
 
 ## TOENJOYDOING
 - [ ] pick a font pair [here](https://fontpair.co/)
@@ -10,7 +10,6 @@ Source code of Parlons Bitcoin
 - [ ] make the site beautiful -> learn how to kill it with tailwind
   - [ ] (optional) add hovering effect when going over a tile in the podcast grid
 - [ ] write content of About
-- [ ] write content of Merci
 - [ ] offer to choose a category: Bitcoin/Stoicism
 - [ ] add a button to show the notes of the first episode on home page
 - [ ] add a newsletter subscribe feature
