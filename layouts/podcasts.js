@@ -2,20 +2,14 @@ import React from 'react'
 import NextLink from 'next/link'
 
 function Card({ podcast }) {
-  const [isDescriptionShown, setIsDescriptionShown] = React.useState(false)
-
   return (
     <div
-    onMouseEnter={() => setIsDescriptionShown(true)}
-    onMouseLeave={() => setIsDescriptionShown(false)}
-    className="w-full shadow-lg  mb-8 cursor-pointer  bg-white rounded-lg sm:rounded-2xl p-1 sm:p-2.5 hover:shadow-md">
+      className="w-full shadow-lg  mb-8 cursor-pointer  bg-white rounded-lg sm:rounded-2xl p-1 sm:p-2.5 hover:shadow-md">
       <NextLink href={`/podcasts/${podcast.slug}`}>
-        <div className="flex flex-col  items-center">
+        <div className="flex flex-col relative items-center">
           <img className="rounded-md" alt='podcast-tile' src={podcast.image} />
-          {isDescriptionShown &&
-            <div className="absolute italic p-5 inline-block my-32 max-w-xs text-center bg-gray-100 bg-opacity-95 rounded-md">{podcast.description}</div>
-          }
-          <p className="text-gray-600 mt-1 text-lg font-semibold p-2 text-center my-auto">{podcast.title}</p>
+          <div className="absolute italic opacity-0 hover:opacity-95 transition-opacity p-5 top-0 bottom-0 right-0 left-0 flex items-center text-center bg-gray-50 bg-opacity-95 rounded-md text-gray-800">{podcast.description}</div>
+          <p className="text-gray-600 mt-1 text-lg font-medium p-2 text-center my-auto">{podcast.title}</p>
         </div>
       </NextLink>
     </div>
