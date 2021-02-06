@@ -16,15 +16,15 @@ const quotesByAuthor = {
     "La fin ressemble inévitablement au début: une personne qui démarre une amitié parce que ça lui profite cessera d'être amie lorsque cela ne lui profite plus.",
     "Offir son amitié seulement pour le meilleur mais pas pour le pire, c'est la dépouiller de toute dignité.",
     "L'homme sage (...) ne manque de rien, car manquer de quelque chose signifie que cette chose une nécessite et rien, à l'homme sage, n'est une nécessité.",
-    "Non heureux est celui qui pense cela de lui-même.",
-    "Eh bien nous devrions chérir le vieil âge et le savourer. Il est plein de plaisir si tu sais comment l'utiliser. Les fruits sont les savoureux à la fin de la saison."
+    "Non heureux est celui qui le pense de lui-même.",
+    "Eh bien nous devrions chérir le vieil âge et le savourer. Il est plein de plaisirs si tu sais comment l'utiliser. Les fruits sont les savoureux à la fin de la saison."
   ],
   "Lao Tzu": [
     "Le sage n'entreprend jamais de grandes choses, ainsi il les accomplit.",
     "La Nature ne se hâte en rien, pourtant tout est accompli.",
   ],
   "Joseph Campbell": [
-    `Suis ta voie. Si tu suis ta voie, tu te places sur un chemin qui a toujours été là à t'attendre, et la vie que tu devrais de vivre est celle que tu vis. Lorsque tu es capable de la voir, tu commences à rencontrer des gens qui sont dans le champ de ta voie, et ils ouvrent des portes pour toi. Je dis, suis ta voie et ne sois pas appeuré, les portes s'ouvriront là où tu ne savais pas qu'elles étaient. Si tu suis ta voie, des portes s'ouvriront pour toi qui ne se seraient ouvertes pour nul autre.`
+    `Suis ta voie. Si tu suis ta voie, tu te places sur un chemin qui a toujours été là à t'attendre, et la vie que tu devrais de vivre est celle que tu vis. Lorsque tu es capable de la voir, tu commences à rencontrer des gens qui sont dans le champ de ta voie, et ils ouvrent des portes pour toi. Je dis, suis ta voie et n'aie crainte, les portes s'ouvriront là où tu ne savais pas qu'elles étaient. Si tu suis ta voie, des portes s'ouvriront pour toi qui ne se seraient ouvertes pour nul autre.`
   ],
   Epicure: [
     "Tout homme qui ne pense pas que ce qu'il a est amplement suffisant est un homme malheureux, même s'il est maître du monde.",

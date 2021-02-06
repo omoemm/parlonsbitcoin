@@ -15,6 +15,7 @@ Source code of Parlons Bitcoin
 - [ ] add a newsletter subscribe feature
 - [ ] add a leave a message feature
 - [ ] add links to social
+- [ ] check form.io
 ## DONE
 - [x] add route to each individual podcast
 - [x] paint content of each podcast on its page
