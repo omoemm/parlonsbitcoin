@@ -2,11 +2,11 @@ import NextLink from 'next/link'
 
 export default function Nav() {
   return (
-    <nav className="flex justify-between max-w-4xl w-full p-8 my-0 md:my-8 mx-auto">
+    <nav className="flex justify-between items-center max-w-4xl w-full p-6 md:p-8 my-0 md:my-8 mx-auto">
       <NextLink href="/">
         <a className="text-orange text-2xl font-extrabold">Parlons Bitcoin</a>
       </NextLink>
-      <div>
+      <div className="flex flex-col items-end md:flex-row md:items-center">
         <NextLink href="/podcasts">
           <a className="mr-6 text-lg font-bold">
             Podcasts

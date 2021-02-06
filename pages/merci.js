@@ -14,9 +14,9 @@ function HallOfFame() {
   return (
     <>
       <h2 className="font-bold text-lg md:text-3xl tracking-tight my-4">Mur de Gloire <p className="font-normal text-sm text-gray-500">un commentaire, une 👑</p></h2>
-      <h2 className="text-2xl my-3">👑👑</h2>
+      <h2 className="text-2xl mb-3">👑👑</h2>
       {contributors["👑👑"]}
-      <h2 className="text-2xl my-3">👑</h2>
+      <h2 className="text-2xl mb-3">👑</h2>
       {contributors["👑"]}
     </>
   )
@@ -25,8 +25,8 @@ function HallOfFame() {
 export default function Merci() {
   return (
     <Container>
-      <div className="flex flex-col max-w-2xl items-start mx-auto my-8">
-        <h1 className="font-bold text-xl md:text-4xl tracking-tight text-black mb-4">Merci</h1>
+      <div className="flex flex-col max-w-2xl items-start mx-auto mb-4 md:my-8">
+        <h1 className="font-bold text-2xl md:text-4xl tracking-tight text-black mb-4">Merci</h1>
         <p className="text-gray-900 mb-2">
           Parlons Bitcoin ne serait pas possible sans toutes les personnes qui y ont contribué.
         </p>
