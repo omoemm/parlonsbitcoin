@@ -20,7 +20,7 @@ const Spotify = () => (
 
 export default function Footer() {
 	return (
-		<footer className="flex flex-col items-center border-t border-gray-200 max-w-2xl mx-auto w-full mb-8 space-y-4">
+		<footer className="flex flex-col items-center border-t border-gray-200 max-w-xs md:max-w-2xl mx-auto mb-8 space-y-4">
 			<hr className="w-full border-1 border-gray-200 mb-2"/>
 			<a
 				className="bg-orange hover:bg-orwhite hover:text-orange text-orwhite font-bold py-3 px-12 lg:px-8 duration-200 transition-colors rounded-md hover:shadow-sm shadow-md">
