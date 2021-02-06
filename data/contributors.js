@@ -35,7 +35,8 @@ const contributors = {
     "Victor M.",
     "Victor B.",
     "Nectarios",
-    "David S."
+    "David S.",
+    "Quentin",
   ]
 }
 
