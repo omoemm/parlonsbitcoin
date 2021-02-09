@@ -9,7 +9,7 @@ export default function Container(props) {
   const { children, ...customMeta } = props;
   const router = useRouter();
   const meta = {
-    title: 'Parlons Bitcoin - Brisons le mythe.',
+    title: 'Parlons Bitcoin - Brisons le mythe',
     description: `TODO`,
     image: '', //TODO
     type: 'website',
