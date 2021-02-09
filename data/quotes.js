@@ -17,7 +17,10 @@ const quotesByAuthor = {
     "Offir son amitié seulement pour le meilleur mais pas pour le pire, c'est la dépouiller de toute dignité.",
     "L'homme sage (...) ne manque de rien, car manquer de quelque chose signifie que cette chose une nécessite et rien, à l'homme sage, n'est une nécessité.",
     "Non heureux est celui qui le pense de lui-même.",
-    "Eh bien nous devrions chérir le vieil âge et le savourer. Il est plein de plaisirs si tu sais comment l'utiliser. Les fruits sont les savoureux à la fin de la saison."
+    "Eh bien nous devrions chérir le vieil âge et le savourer. Il est plein de plaisirs si tu sais comment l'utiliser. Les fruits sont les savoureux à la fin de la saison.",
+    "Vivre sous la contrainte est un manque de chance, mais il n'y a aucune obligation de vivre sous contrainte.",
+    "‘La vie du folie est vide de gratitude, emplie d'anxiété: elle est concentrée entièrement sur le futur.’ Qui a dit-cela? demandes-tu. Le même homme qui pose la question."
+
   ],
   "Lao Tzu": [
     "Le sage n'entreprend jamais de grandes choses, ainsi il les accomplit.",

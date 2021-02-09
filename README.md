@@ -2,12 +2,11 @@ Source code of Parlons Bitcoin
 
 # Roadmap
 ## ESSENTIAL
-- [ ] write content of Merci
+- [ ] write content of About
 
 ## TOENJOYDOING
 - [ ] validate SEO of the website
 - [ ] make the site beautiful -> learn how to kill it with tailwind
-- [ ] write content of About
 - [ ] add a newsletter subscribe feature
 - [ ] add a leave a message feature
 - [ ] add links to social
@@ -19,3 +18,4 @@ Source code of Parlons Bitcoin
 - [x] create a grid grouping all podcasts in individual tiles
 - [x] add a randomized quote generator
 - [X] (optional) add hovering effect when going over a tile in the podcast grid
+- [x] write content of Merci
