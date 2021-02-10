@@ -23,7 +23,9 @@ export default function Footer() {
 		<footer className="flex flex-col items-center border-t border-gray-200 max-w-xs md:max-w-2xl mx-auto mb-8 space-y-4">
 			<hr className="w-full border-1 border-gray-200 mb-2"/>
 			<a
-				className="bg-orange hover:bg-orwhite hover:text-orange text-orwhite font-bold py-3 px-12 lg:px-8  transition-colors duration-200 rounded-md hover:shadow-sm shadow-md">
+				href="/contact"
+				className="bg-orange hover:bg-orwhite hover:text-orange text-orwhite font-bold py-3 px-12 lg:px-8  transition-colors duration-200 rounded-md hover:shadow-sm shadow-md"
+			>
 				Laisse moi un message 💌
 			</a>
 			<div className="flex flex-row flex-wrap justify-center items-center space-x-4">

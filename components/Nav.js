@@ -10,15 +10,22 @@ export default function Nav() {
         <NextLink href="/podcasts">
           <a className="mr-6 text-lg font-bold">
             Podcasts
-            </a>
+          </a>
         </NextLink>
         <NextLink href="/merci">
           <a className="mr-6 text-lg">
-            👑</a>
+            👑
+          </a>
         </NextLink>
         <NextLink href="/about">
           <a className="mr-6 text-lg font-bold">
-            À Propos</a>
+            À Propos
+          </a>
+        </NextLink>
+        <NextLink href="/contact">
+          <a className="mr-6 text-lg font-bold">
+            💌
+          </a>
         </NextLink>
       </div>
     </nav>

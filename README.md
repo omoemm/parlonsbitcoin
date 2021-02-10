@@ -2,11 +2,11 @@ Source code of Parlons Bitcoin
 
 # Roadmap
 ## ESSENTIAL
+- [ ] add a newsletter subscribe feature (use a gform as a mvp)
 
 ## TOENJOYDOING
 - [ ] validate SEO of the website
-- [ ] add a newsletter subscribe feature (use a gform as a mvp)
-- [ ] add a leave a message feature (use a gform as a mvp)
+
 - [ ] add links to social
 - [ ] confirm the site is mobile friendly
 ## DONE
@@ -17,3 +17,4 @@ Source code of Parlons Bitcoin
 - [X] (optional) add hovering effect when going over a tile in the podcast grid
 - [x] write content of Merci
 - [x] write content of About
+- [x] add a leave a message feature (use a gform as a mvp)

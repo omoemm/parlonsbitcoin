@@ -7,8 +7,7 @@ export default function Newsletter() {
         <p className="text-gray-600 dark:text-gray-400 mb-4">
           Je te préviendrai lorsqu'un nouvel épisode est sorti 🆕
         </p>
-        {/* TODO */}
-        {/* <Subscribe /> */}
+
       </div>
   );
 }
