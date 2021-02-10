@@ -1,13 +1,17 @@
-export default function Newsletter() {
-  return (
-      <div className="flex flex-col justify-center items-start max-w-2xl mx-auto mb-16">
-        <h1 className="font-bold text-lg md:text-2xl tracking-tight mb-4 text-black dark:text-white">
-          Ne manque aucun épisode, abonne toi
-        </h1>
-        <p className="text-gray-600 dark:text-gray-400 mb-4">
-          Je te préviendrai lorsqu'un nouvel épisode est sorti 🆕
-        </p>
+import React from 'react'
 
+
+export default function Newsletter() {
+  const [showForm, setShowFrom] = React.useState(false)
+
+  return (
+      <div className="flex flex-col justify-center items-start max-w-md mx-auto my-8">
+        <button className="rounded-md shadow-md hover:shadow-sm font-bold text-lg md:text-xl tracking-tight border px-6 py-4 self-center w-full" onClick={() => setShowFrom(!showForm)}>
+          {showForm ? "➖" : "Ne manque aucun épisode, abonne-toi 🚀"}
+        </button>
+        {showForm &&
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfCHsiwmrZS1xcZRVD5D_Ok2HJ1XJzvqYItYgP636nKROBsNg/viewform?embedded=true" frameborder="0" marginheight="0" height="460" marginwidth="0" className="w-full">Loading…</iframe>
+        }
       </div>
   );
 }
