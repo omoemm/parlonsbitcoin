@@ -7,7 +7,6 @@ Source code of Parlons Bitcoin
 - [ ] validate SEO of the website
 - [ ] add links to social
 - [ ] confirm the site is mobile friendly
-- [ ] add favicon
 - [ ] write episode notes
 
 ## DONE
@@ -20,3 +19,4 @@ Source code of Parlons Bitcoin
 - [x] write content of About
 - [x] add a leave a message feature (use a gform as a mvp)
 - [x] add a newsletter subscribe feature (use a gform as a mvp)
+- [x] add favicon
