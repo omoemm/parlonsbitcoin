@@ -10,8 +10,8 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: 'Parlons Bitcoin - Brisons le mythe',
-    description: `TODO`,
-    image: '', //TODO
+    description: `Le podcast francophone sur le Bitcoin qui t'explique l'argent du futur.`,
+    image: 'https://parlonsbitcoin.com/static/images/podcast-square.png',
     type: 'website',
     ...customMeta
   };

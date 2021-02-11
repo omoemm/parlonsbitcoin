@@ -8,6 +8,7 @@ Source code of Parlons Bitcoin
 - [ ] add links to social
 - [ ] confirm the site is mobile friendly
 - [ ] write episode notes
+- [ ] (live) confirm the link of robots and images are working
 
 ## DONE
 - [x] add route to each individual podcast
