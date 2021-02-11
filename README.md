@@ -1,12 +1,12 @@
 Source code of Parlons Bitcoin
 
 # Roadmap
-## ESSENTIAL
+## DOING
+- [ ] confirm the site is mobile friendly
+  - [ ] make a mobile menu
 
 ## TOENJOYDOING
-- [ ] validate SEO of the website
 - [ ] add links to social
-- [ ] confirm the site is mobile friendly
 - [ ] write episode notes
 - [ ] (live) confirm the link of robots and images are working
 
@@ -21,3 +21,4 @@ Source code of Parlons Bitcoin
 - [x] add a leave a message feature (use a gform as a mvp)
 - [x] add a newsletter subscribe feature (use a gform as a mvp)
 - [x] add favicon
+- [x] validate SEO of the website
