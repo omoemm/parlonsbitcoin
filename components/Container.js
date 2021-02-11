@@ -10,7 +10,7 @@ export default function Container(props) {
   const router = useRouter();
   const meta = {
     title: 'Parlons Bitcoin - Brisons le mythe',
-    description: `Le podcast francophone sur le Bitcoin qui t'explique l'argent du futur.`,
+    description: `Le podcast francophone qui te fait comprendre l'argent du futur, le Bitcoin`,
     image: 'https://parlonsbitcoin.com/static/images/podcast-square.png',
     type: 'website',
     ...customMeta
@@ -20,27 +20,23 @@ export default function Container(props) {
     <div className="bg-orwhite">
       <Head>
         <title>{meta.title}</title>
-        {/* TOOD check the robots are correct */}
         <meta name="robots" content="follow, index" />
         <meta content={meta.description} name="description" />
-        {/* TOOD check the URL is correct */}
+        <meta name="keywords" content="bitcoin, podcast, fr, français"/>
         <meta property="og:url" content={`https://parlonsbitcoin.com${router.asPath}`} />
         <meta property="og:type" content={meta.type} />
         <meta property="og:site_name" content="Parlons Bitcoin" />
         <meta property="og:description" content={meta.description} />
         <meta property="og:title" content={meta.title} />
         <meta property="og:image" content={meta.image} />
-        {/* TOOD check the twitter cards */}
         <meta name="twitter:card" content="summary_large_image" />
-        {/* TOOD add twitter site to the twitter cards */}
+        <meta name="twitter:site" content="@omoemm" />
         <meta name="twitter:title" content={meta.title} />
         <meta name="twitter:description" content={meta.description} />
         <meta name="twitter:image" content={meta.image} />
-        {/* TODO check podcast key exist */}
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
-        {/* TODO add keywords */}
       </Head>
 
       <Nav />
