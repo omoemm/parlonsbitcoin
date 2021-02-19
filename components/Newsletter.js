@@ -1,4 +1,4 @@
-import React, { useRef } from 'react'
+import React from 'react'
 import axios from 'axios'
 import Arithmetic from 'components/Arithmetic'
 
@@ -6,7 +6,7 @@ import Arithmetic from 'components/Arithmetic'
 export default function Newsletter() {
   const inputEl = React.useRef(null)
   const [email, setEmail] = React.useState(null)
-  const [form, setForm] = React.useState({ state: 'waitingEmail' })
+  const [form, setForm] = React.useState({ state: 'waitingData' })
 
 
   const storeEmail = async (e) => {
@@ -49,7 +49,7 @@ export default function Newsletter() {
     <div className="flex flex-col justify-center items-center max-w-md mx-auto my-8">
       <div className="font-bold text-lg md:text-xl tracking-tight px-6 py-4 self-center w-full">Ne manque aucun épisode, abonne-toi 🚀
       </div>
-      {form.state === "waitingEmail" && (
+      {form.state === "waitingData" && (
         <form className="relative my-2 shadow-md w-full" onSubmit={storeEmail}>
           <input
             ref={inputEl}
@@ -78,7 +78,7 @@ export default function Newsletter() {
           <p className='text-red-500'>{`${form.message}`}</p>
           <button
             className="bg-white shadow-md px-2 py-2 font-bold border text-gray-900 rounded"
-            onClick={() => setForm({ state: 'waitingEmail' })}
+            onClick={() => setForm({ state: 'waitingData' })}
           >
             Recommencer 🔃
         </button>
