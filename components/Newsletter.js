@@ -25,19 +25,27 @@ export default function Newsletter() {
 
   const checkArithmetic = async (e) => {
     e.preventDefault()
+    const userAnswer = mathEl.current.value
+    userAnswer == number1 + number2
+      ? postEmail()
+      : setForm({
+        state: 'error',
+        message: `${userAnswer} est une réponse incorrecte à ${number1} + ${number2} ?`
+      })
   }
 
   const postEmail = async () => {
     try {
-      const res = await axios({
-        method: "POST",
-        url: "https://api.onearth.be/v1/parlonsbitcoin/mailing",
-        data: {
-          email: email,
-          token: process.env.TOKEN,
-        }
-      })
+      // const res = await axios({
+      //   method: "POST",
+      //   url: "https://api.onearth.be/v1/parlonsbitcoin/mailing",
+      //   data: {
+      //     email: email,
+      //     token: process.env.TOKEN,
+      //   }
+      // })
       // check status == 201 - succesful POST
+      setForm({state: "success"})
     }
     catch (error) {
       // not successful POST -> try again
@@ -72,18 +80,31 @@ export default function Newsletter() {
         <form className="flex flex-row justify-center my-2 w-full space-x-4" onSubmit={checkArithmetic}>
           <input
             ref={mathEl}
-            placeholder={`Que vaut ${number1} + ${number2} ? `}
+            placeholder={`Que vaut ${number1} + ${number2} ?`}
             type="number"
             autoComplete="number"
             required
             className="shadow-sm px-4 py-2 rounded-md bg-white text-gray-900"
           />
           <button
-          className="bg-white shadow-md px-2 py-2 font-bold border text-gray-900 rounded"
+            className="bg-white shadow-md px-2 py-2 font-bold border text-gray-900 rounded"
           >Soumettre 🧮</button>
         </form>
       )}
-
+      {form.state === "error" && (
+        <div className="flex flex-col justify-center items-center space-y-4">
+          <p className='text-red-500'>{`${form.message}`}</p>
+          <button
+            className="bg-white shadow-md px-2 py-2 font-bold border text-gray-900 rounded"
+            onClick={() => setForm({state:'waitingEmail'})}
+          >
+            Recommencer 🔃
+        </button>
+        </div>
+      )}
+      {form.state === "success" && (
+        <p><em>{email}</em> correctement enregistré 🌟🤩</p>
+      )}
     </div>
   );
 }
