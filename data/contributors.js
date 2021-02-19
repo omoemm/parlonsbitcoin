@@ -21,6 +21,7 @@ const pod2 = [
   "Julien",
   "Sonia",
   "Wen Da",
+  "Pierre",
 ]
 
 const pod1 = [
@@ -54,9 +55,15 @@ const pod1 = [
   "Samuel",
   "Kevin",
   "Victor B.",
+  "Pierre",
 ]
 
-const namesByPodcasts = [pod1, pod2]
+const extras = [
+  "Seb",
+  "Pierre",
+]
+
+const namesByPodcasts = [pod1, pod2, extras]
 const allNames = namesByPodcasts.reduce((previous, names) => previous.concat(names), [])
 const uniqueNames = allNames.reduce((previous, name) => {
   if (!previous.includes(name)) {
