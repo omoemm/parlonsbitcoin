@@ -11,8 +11,7 @@ export default function Newsletter() {
   const inputEl = useRef(null)
   const mathEl = useRef(null)
   const [email, setEmail] = React.useState(null)
-  // const [form, setForm] = React.useState({ state: 'waitingEmail' })
-  const [form, setForm] = React.useState({ state: 'emailStored' })
+  const [form, setForm] = React.useState({ state: 'waitingEmail' })
   const [number1, setNumber1] = React.useState(Math.floor(Math.random() * 11))
   const [number2, setNumber2] = React.useState(Math.floor(Math.random() * 11))
 
@@ -26,6 +25,7 @@ export default function Newsletter() {
   const checkArithmetic = async (e) => {
     e.preventDefault()
     const userAnswer = mathEl.current.value
+
     userAnswer == number1 + number2
       ? postEmail()
       : setForm({
@@ -35,22 +35,31 @@ export default function Newsletter() {
   }
 
   const postEmail = async () => {
-    try {
-      // const res = await axios({
-      //   method: "POST",
-      //   url: "https://api.onearth.be/v1/parlonsbitcoin/mailing",
-      //   data: {
-      //     email: email,
-      //     token: process.env.TOKEN,
-      //   }
-      // })
-      // check status == 201 - succesful POST
-      setForm({state: "success"})
-    }
-    catch (error) {
-      // not successful POST -> try again
-      // console.log(error.response)
-    }
+    await axios({
+      method: "POST",
+      url: "https://api.onearth.be/v1/parlonsbitcoin/mailing",
+      data: {
+        email: email,
+        token: process.env.TOKEN,
+      }
+    })
+      .then((response) => {
+        if (response.status === 201) {
+          setForm({ state: "success" })
+        }
+        else {
+          setForm({
+            state: "error",
+            message: `erreur ${response.status}`
+          })
+        }
+      })
+      .catch(error => {
+        setForm({
+          state: "error",
+          message: error.message,
+        })
+      })
   }
 
 
@@ -96,7 +105,7 @@ export default function Newsletter() {
           <p className='text-red-500'>{`${form.message}`}</p>
           <button
             className="bg-white shadow-md px-2 py-2 font-bold border text-gray-900 rounded"
-            onClick={() => setForm({state:'waitingEmail'})}
+            onClick={() => setForm({ state: 'waitingEmail' })}
           >
             Recommencer 🔃
         </button>
