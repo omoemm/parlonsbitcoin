@@ -1,14 +1,12 @@
 import React, { useRef } from 'react'
 import axios from 'axios'
+import Arithmetic from 'components/Arithmetic'
 
 
 export default function Newsletter() {
-  const inputEl = useRef(null)
-  const mathEl = useRef(null)
+  const inputEl = React.useRef(null)
   const [email, setEmail] = React.useState(null)
   const [form, setForm] = React.useState({ state: 'waitingEmail' })
-  const [number1, setNumber1] = React.useState(Math.floor(Math.random() * 11))
-  const [number2, setNumber2] = React.useState(Math.floor(Math.random() * 11))
 
 
   const storeEmail = async (e) => {
@@ -17,17 +15,6 @@ export default function Newsletter() {
     setForm({ state: 'emailStored' })
   }
 
-  const checkArithmetic = async (e) => {
-    e.preventDefault()
-    const userAnswer = mathEl.current.value
-
-    userAnswer == number1 + number2
-      ? postEmail()
-      : setForm({
-        state: 'error',
-        message: `${userAnswer} est une réponse incorrecte à ${number1} + ${number2} ?`
-      })
-  }
 
   const postEmail = async () => {
     await axios({
@@ -81,19 +68,10 @@ export default function Newsletter() {
         </form>
       )}
       {form.state === "emailStored" && (
-        <form className="flex flex-row justify-center my-2 w-full space-x-4" onSubmit={checkArithmetic}>
-          <input
-            ref={mathEl}
-            placeholder={`Que vaut ${number1} + ${number2} ?`}
-            type="number"
-            autoComplete="number"
-            required
-            className="shadow-sm px-4 py-2 rounded-md bg-white text-gray-900"
-          />
-          <button
-            className="bg-white shadow-md px-2 py-2 font-bold border text-gray-900 rounded"
-          >Soumettre 🧮</button>
-        </form>
+        <Arithmetic
+          postMethod={postEmail}
+          setForm={setForm}
+        />
       )}
       {form.state === "error" && (
         <div className="flex flex-col justify-center items-center space-y-4">
