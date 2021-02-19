@@ -2,11 +2,6 @@ import React, { useRef } from 'react'
 import axios from 'axios'
 
 
-function ArithmeticValidator() {
-  return <div>hello</div>
-}
-
-
 export default function Newsletter() {
   const inputEl = useRef(null)
   const mathEl = useRef(null)
