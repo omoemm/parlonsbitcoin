@@ -15,7 +15,7 @@ function Card({ podcast }) {
           <div
             className="absolute opacity-0 hover:opacity-95 transition-opacity md:p-5 top-0 bottom-0 right-0 left-0 flex items-center text-center md:text-lg bg-gray-50 bg-opacity-95 rounded-md text-gray-800">
             {podcast.description}
-            </div>
+          </div>
         </div>
       </NextLink>
     </div>
