@@ -48,6 +48,7 @@ export default function About() {
           <MyP>
             Je pense que tous les humains sont magnifiques. La seule chose qui nous empêche de kiffer la vie c'est qu'on ne prend pas le temps de regarder ce qu'on est vraiment.
           </MyP>
+          <img className="my-2" alt='me-on-a-lake' src='/static/images/the-eyes.jpg' />
           <MyP>
             Laisse moi-un message ou contacte moi sur Twitter, ça me fera plaisir de discuter avec toi 😎
           </MyP>
