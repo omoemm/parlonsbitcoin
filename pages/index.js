@@ -12,7 +12,7 @@ function PodFrame({ podcast }) {
     <div className="flex flex-col justify-center items-center max-w-2xl w-full mx-auto mb-4">
       <PodcastPlayer simplelink={simplelink} />
       <NextLink href={`/podcasts/${slug}`}>
-        <a className="hover:shadow text-sm md:text-base my-3 border border-gray-200 rounded px-8 py-4">
+        <a className="hover:shadow text-sm md:text-base my-3 border border-gray-200 bg-gray-50 rounded px-8 py-4">
           📝 Plus de détails sur ce podcast
         </a>
       </NextLink>

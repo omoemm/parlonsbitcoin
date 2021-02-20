@@ -1,5 +1,6 @@
 import Container from "components/Container";
 import PodcastPlayer from "components/PodcastPlayer";
+import Newsletter from "components/Newsletter";
 import { parseISO, format } from 'date-fns';
 import { fr } from 'date-fns/locale'
 import Scroll from 'react-scroll'
@@ -32,12 +33,15 @@ export default function PodcastLayout({ children, frontMatter }) {
         <div className="prose text-gray-800 max-w-none w-full">
           {children}
         </div>
-      <a
-        className="hover:shadow mx-auto text-sm md:text-base mt-2 border border-gray-200 rounded px-6 py-4"
-        onClick={scrollToTop}>
-          Vers le top! ☝
-      </a>
       </article>
+      <Newsletter />
+      <div className="flex flex-col items-center max-w-2xl mx-auto my-8">
+        <a
+          className="hover:shadow text-sm md:text-base border border-gray-200 bg-gray-100 rounded px-6 py-4"
+          onClick={scrollToTop}>
+            Vers le top! ☝
+        </a>
+      </div>
     </Container>
   )
 }

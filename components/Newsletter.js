@@ -57,7 +57,7 @@ export default function Newsletter() {
             type="email"
             autoComplete="email"
             required
-            className="px-4 py-2 mt-1 focus:ring-blue-500 focus:border-blue-500 block w-full border-gray-300 rounded-md bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100"
+            className="px-4 py-2 mt-1 block w-full border-gray-300 rounded-md bg-white text-gray-900 "
           />
           <button
             className="flex items-center justify-center absolute right-1 top-2 px-4 font-bold h-8 bg-gray-100 text-gray-900 rounded w-28"
