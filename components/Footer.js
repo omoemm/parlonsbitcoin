@@ -29,7 +29,7 @@ export default function Footer() {
 				Laisse moi un message 💌
 			</a>
 			<div className="flex flex-row flex-wrap justify-center items-center space-x-4">
-				<ExternalLink>Youtube</ExternalLink>
+				<ExternalLink href="https://www.youtube.com/channel/UCBLCX3V2DeoP1wrEfxG-z0g">Youtube</ExternalLink>
 				<ExternalLink><Spotify /></ExternalLink>
 				<ExternalLink>Apple Podcasts</ExternalLink>
 				<ExternalLink>Instagram</ExternalLink>
