@@ -14,12 +14,17 @@ export default function About() {
         <h1 className="font-bold text-2xl md:text-4xl tracking-tight text-black mb-4">
           Parlons Bitcoin, Brisons le Mythe
         </h1>
-        <MyP>Le cours du Bitcoin monte et descend.
+        <MyP>
+          Le cours du Bitcoin monte et descend.
         </MyP>
         <MyP>
-          Qu'est-ce qui justifie sa valeur? Qu'est-ce que le Bitcoin?</MyP>
-        <MyP>Parlons Bitcoin, c'est le podcast francophone sur le Bitcoin où on répond à ces questions.</MyP>
-        <MyP>Ensemble, on brise le mythe, on apprend ce qu'est l'argent du futur et dans quelle direction il nous emmène.
+          Pourquoi?
+        </MyP>
+        <MyP>
+          Qu'est-ce que le Bitcoin?
+        </MyP>
+        <MyP>
+          <b className="tracking-tight">Parlons Bitcoin</b>, brisons le mythe. Le podcast francophone qui t'aide progressivement à parler Bitcoin et à démystifier cette nouvelle technologie, un pas à la fois
         </MyP>
         <h2 className="font-bold text-lg md:text-3xl tracking-tight my-4">
           Qui suis-je?
