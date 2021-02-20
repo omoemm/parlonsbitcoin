@@ -25,7 +25,7 @@ export default function PodcastLayout({ children, frontMatter }) {
         <h1 className="font-bold text-3xl md:text-5xl tracking-tight mb-4">
           {frontMatter.title}
         </h1>
-        <p className="text-sm text-gray-500 min-w-32">
+        <p className="text-md text-gray-600 min-w-32">
           {format(parseISO(frontMatter.date), 'dd MMMM yyyy', { locale: fr })}
         </p>
         <PodcastPlayer className="my-4" simplelink={frontMatter.simplelink} />
