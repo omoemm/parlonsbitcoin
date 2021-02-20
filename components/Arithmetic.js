@@ -18,7 +18,7 @@ export default function Arithmetic({postMethod, setForm}) {
   }
 
   return (
-    <form className="flex flex-row justify-center my-2 w-full space-x-4" onSubmit={checkArithmetic}>
+    <form className="flex flex-col md:flex-row justify-center my-2 w-full space-x-4 space-y-4" onSubmit={checkArithmetic}>
       <input
         ref={mathEl}
         placeholder={`Que vaut ${number1} + ${number2} ?`}

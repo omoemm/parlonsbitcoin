@@ -19,7 +19,7 @@ const quotesByAuthor = {
     "Non heureux est celui qui le pense de lui-même.",
     "Eh bien nous devrions chérir le vieil âge et le savourer. Il est plein de plaisirs si tu sais comment l'utiliser. Les fruits sont les savoureux à la fin de la saison.",
     "Vivre sous la contrainte est un manque de chance, mais il n'y a aucune obligation de vivre sous contrainte.",
-    "‘La vie du folie est vide de gratitude, emplie d'anxiété: elle est concentrée entièrement sur le futur.’ Qui a dit-cela? demandes-tu. Le même homme qui pose la question."
+    "‘La vie de folie est vide de gratitude, emplie d'anxiété: elle est concentrée entièrement sur le futur.’ Qui a dit-cela? demandes-tu. Le même homme qui pose la question."
 
   ],
   "Lao Tzu": [

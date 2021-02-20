@@ -6,7 +6,7 @@ export default function Nav() {
       <NextLink href="/">
         <a className="text-orange text-2xl font-extrabold">Parlons Bitcoin</a>
       </NextLink>
-      <div className="flex flex-col items-end md:flex-row md:items-center">
+      <div className="flex flex-wrap justify-between md:flex md:flex-row md:items-center">
         <NextLink href="/podcasts">
           <a className="mr-6 text-lg font-bold">
             Podcasts
