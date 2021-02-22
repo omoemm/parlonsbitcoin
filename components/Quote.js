@@ -12,7 +12,7 @@ export default function Quote() {
   }
 
   return (
-    <div className="my-6 flex flex-col items-center bg-gray-100 max-w-md mx-auto py-4 px-6 rounded-lg">
+    <div className="my-8 flex flex-col items-center bg-gray-100 max-w-md mx-auto py-4 px-6 rounded-lg">
       <div className="prose prose-sm md:prose-lg text-justify text-gray-600 max-w-md tracking-tight">
         <em>{quote}</em><br />
         <em>– {author}</em><br />

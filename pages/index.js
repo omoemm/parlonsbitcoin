@@ -9,7 +9,7 @@ import NextLink from 'next/link'
 function PodFrame({ podcast }) {
   const { simplelink, slug } = podcast
   return (
-    <div className="flex flex-col justify-center items-center max-w-2xl w-full mx-auto mb-4">
+    <div className="flex flex-col justify-center items-center max-w-2xl w-full mx-auto">
       <PodcastPlayer simplelink={simplelink} />
       <NextLink href={`/podcasts/${slug}`}>
         <a className="hover:shadow text-sm md:text-base my-3 border border-gray-200 bg-gray-50 rounded px-8 py-4">
@@ -24,8 +24,8 @@ export default function Home({ latestPodcast }) {
   return (
     <Container>
       <PodFrame podcast={latestPodcast} />
-      <Quote />
       <Newsletter />
+      <Quote />
     </Container>
   )
 }

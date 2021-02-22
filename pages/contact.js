@@ -2,6 +2,7 @@ import React from 'react'
 import Container from 'components/Container'
 import Arithmetic from 'components/Arithmetic'
 import axios from 'axios'
+import Newsletter from 'components/Newsletter'
 
 
 export default function Contact() {
@@ -41,9 +42,11 @@ export default function Contact() {
       <div className="flex flex-col justify-center items-center my-8 max-w-2xl mx-auto">
         {form.state === "notVerified" &&
           <div className=" w-full my-2 max-w-lg">
+            <div className="mb-4 flex justify-center text-gray-600  text-center">Laisse moi ton contact dans le message si tu veux que je te réponde 📝
+            </div>
             <textarea
               ref={inputEl}
-              placeholder="Laisse moi ton contact si tu veux que je puisse te répondre 📝 "
+              placeholder="✍ ..."
               required
               className="shadow-md px-4 py-2 w-full rounded-md bg-white text-gray-900 resize-y h-56"
             />
@@ -67,6 +70,10 @@ export default function Contact() {
           </div>
         }
       </div>
+      <div className="mb-8">
+        <Newsletter />
+      </div>
+
     </Container>
   )
 }

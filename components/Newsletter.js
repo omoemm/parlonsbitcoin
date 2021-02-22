@@ -46,21 +46,21 @@ export default function Newsletter() {
 
 
   return (
-    <div className="flex flex-col justify-center items-center max-w-md mx-auto my-8">
+    <div className="flex flex-col justify-center items-center max-w-md mx-auto my-2">
       <div className="font-bold text-lg md:text-xl tracking-tight px-6 py-4 self-center w-full">Ne manque aucun épisode, abonne-toi 🚀
       </div>
       {form.state === "waitingData" && (
-        <form className="relative my-2 shadow-md w-full" onSubmit={storeEmail}>
+        <form className="relative mb-2 shadow-md w-full" onSubmit={storeEmail}>
           <input
             ref={inputEl}
             placeholder="satoshi@nakamoto.com"
             type="email"
             autoComplete="email"
             required
-            className="px-4 py-2 mt-1 block w-full border-gray-300 rounded-md bg-white text-gray-900 "
+            className="px-4 py-2 mt-1 block w-full border-orange rounded-md bg-white"
           />
           <button
-            className="flex items-center justify-center absolute right-1 top-2 px-4 font-bold h-8 bg-gray-100 text-gray-900 rounded w-28"
+            className="flex items-center justify-center absolute right-1 top-2 px-4 font-bold h-8 text-orwhite bg-orange rounded w-28"
             type="submit"
           >
             S'abonner
