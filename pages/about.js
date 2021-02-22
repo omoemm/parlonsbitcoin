@@ -24,7 +24,7 @@ export default function About() {
           Qu'est-ce que le Bitcoin?
         </MyP>
         <MyP>
-          <b className="tracking-tight">Parlons Bitcoin</b>, brisons le mythe. Le podcast francophone qui t'aide progressivement à parler Bitcoin et à démystifier cette nouvelle technologie, un pas à la fois
+          <b className="tracking-tight">Parlons Bitcoin</b>, brisons le mythe. Le podcast francophone qui t'aide à parler Bitcoin et à démystifier cette nouvelle technologie, un pas à la fois
         </MyP>
         <h2 className="font-bold text-lg md:text-3xl tracking-tight my-4">
           Qui suis-je?
