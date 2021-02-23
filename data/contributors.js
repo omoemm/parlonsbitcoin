@@ -62,6 +62,8 @@ const launch = [
   "Seb",
   "Pierre",
   "Flavie",
+  "Kevin",
+  "Ariane",
 ]
 
 const namesByPodcasts = [pod1, pod2, launch]

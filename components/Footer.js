@@ -26,11 +26,11 @@ export default function Footer() {
 				href="/contact"
 				className="bg-orange hover:bg-orwhite hover:text-orange text-orwhite font-bold py-3 px-12 lg:px-8  transition-colors duration-200 rounded-md hover:shadow-sm shadow-md"
 			>
-				Laisse moi un message 💌
+				Laisse-moi un message 💌
 			</a>
 			<div className="flex flex-row flex-wrap justify-center items-center space-x-4">
 				<ExternalLink href="https://www.youtube.com/channel/UCBLCX3V2DeoP1wrEfxG-z0g">Youtube</ExternalLink>
-				<ExternalLink><Spotify /></ExternalLink>
+				<ExternalLink>Spotify</ExternalLink>
 				<ExternalLink>Apple Podcasts</ExternalLink>
 				<ExternalLink>Instagram</ExternalLink>
 				<ExternalLink href="https://twitter.com/omoemm_">Twitter</ExternalLink>

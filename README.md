@@ -7,7 +7,6 @@ Source code of Parlons Bitcoin
 
 ## TOENJOYDOING
 - [ ] add links to social
-- [ ] write episode notes
 - [ ] (live) confirm the link of robots and images are working
 
 ## DONE
