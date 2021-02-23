@@ -32,7 +32,7 @@ export default function Footer() {
 				<ExternalLink href="https://www.youtube.com/channel/UCBLCX3V2DeoP1wrEfxG-z0g">Youtube</ExternalLink>
 				<ExternalLink>Spotify</ExternalLink>
 				<ExternalLink>Apple Podcasts</ExternalLink>
-				<ExternalLink>Instagram</ExternalLink>
+				<ExternalLink href="https://www.instagram.com/parlonsbitcoin/">Instagram</ExternalLink>
 				<ExternalLink href="https://twitter.com/omoemm_">Twitter</ExternalLink>
 				<ExternalLink href="https://github.com/omoemm/">Github</ExternalLink>
 			</div>
