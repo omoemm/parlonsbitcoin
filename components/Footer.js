@@ -30,7 +30,7 @@ export default function Footer() {
 			</a>
 			<div className="flex flex-row flex-wrap justify-center items-center space-x-4">
 				<ExternalLink href="https://www.youtube.com/channel/UCBLCX3V2DeoP1wrEfxG-z0g">Youtube</ExternalLink>
-				<ExternalLink>Spotify</ExternalLink>
+				<ExternalLink href="https://open.spotify.com/show/5CV3zM2g3oFKjcDlIdr63Z?si=9D28yF1cT1ys0w0ODkt8LA">Spotify</ExternalLink>
 				<ExternalLink>Apple Podcasts</ExternalLink>
 				<ExternalLink href="https://www.instagram.com/parlonsbitcoin/">Instagram</ExternalLink>
 				<ExternalLink href="https://twitter.com/omoemm_">Twitter</ExternalLink>
