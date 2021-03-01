@@ -24,7 +24,7 @@ export default function About() {
           Qu'est-ce que le Bitcoin?
         </MyP>
         <MyP>
-          <b className="tracking-tight">Parlons Bitcoin</b>, brisons le mythe. Le podcast francophone qui t'aide à parler Bitcoin et à démystifier cette nouvelle technologie, un pas à la fois
+          <b className="tracking-tight text-orange">Parlons Bitcoin</b>, brisons le mythe. Le podcast francophone qui t'aide à parler Bitcoin et à démystifier cette nouvelle technologie, un pas à la fois
         </MyP>
         <h2 className="font-bold text-lg md:text-3xl tracking-tight my-4">
           Qui suis-je?
@@ -40,7 +40,7 @@ export default function About() {
             Ils sont où tes bitcoins? Ils sont dans ton laptop? Ils sont dans la blockchain?
           </p>
           <MyP>
-            J'ai rien compris à ses explications. Donc j'ai simplement commencé à chercher par moi-même. Depuis, je me suis jamais vraiment arrêté. C'est après avoir passé des milliers d'heures à me renseigner que j'ai décidé de lancer <b className="tracking-tight">Parlons Bitcoin</b>.
+            J'ai rien compris à ses explications. Donc j'ai simplement commencé à chercher par moi-même. Depuis, je me suis jamais vraiment arrêté. C'est après avoir passé des milliers d'heures à me renseigner que j'ai décidé de lancer <b className="tracking-tight text-orange">Parlons Bitcoin</b>.
           </MyP>
           <MyP>
             Dans la vie, je suis ingénieur électrique de formation et je code au quotidien. Je prends des douches froides, je médite et je prends soin de ma forme.
@@ -50,7 +50,7 @@ export default function About() {
           </MyP>
           <img className="my-2" alt='me-on-a-lake' src='/static/images/the-eyes.jpg' />
           <MyP>
-            Laisse-moi un message ou contacte moi sur Twitter, ça me fera plaisir de discuter avec toi 😎
+            Laisse-moi un message ou contacte moi sur <a className="text-blue-500" href="https://twitter.com/omoemm_">Twitter</a>, ça me fera plaisir de discuter avec toi 😎
           </MyP>
         </div>
       </div>
