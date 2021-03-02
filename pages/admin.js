@@ -1,4 +1,6 @@
 import Container from "components/Container";
+import React from 'react'
+
 
 export async function getServerSideProps(context) {
   const {token} = context.query
@@ -9,6 +11,14 @@ export async function getServerSideProps(context) {
   }
 }
 
+
+function Mailing() {
+  return ("mail")
+}
+
+function Message() {
+  return ("message")
+}
 
 
 export default function Admin({ authed }) {
@@ -23,11 +33,19 @@ export default function Admin({ authed }) {
       </Container>)
   }
 
+  const [state, setState] = React.useState(null)
 
   return (
     <Container
       noindex={true}
     >
+      <div className="flex flex-row justify-center space-x-4 my-8">
+        <button onClick={() => setState("mailing")}>💌</button>
+        <button onClick={() => setState("message")}>📮</button>
+      </div>
+
+    {state === "mailing" && <Mailing/>}
+    {state === "message" && <Message/>}
 
     </Container>
   )
