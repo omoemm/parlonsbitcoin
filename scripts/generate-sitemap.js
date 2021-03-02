@@ -23,7 +23,9 @@ const prettier = require('prettier');
                   .replace('.js', '')
                   .replace('.mdx', '');
                 const route = path === '/index' ? '' : path;
-
+                if (route === "/admin") {
+                  return ""
+                }
                 return `
                         <url>
                             <loc>${`https://parlonsbitcoin.com${route}`}</loc>

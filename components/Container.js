@@ -37,6 +37,9 @@ export default function Container(props) {
         {meta.date && (
           <meta property="article:published_time" content={meta.date} />
         )}
+        {meta.noindex && (
+          <meta name="robots" content="noindex" />
+        )}
       </Head>
 
       <Nav />
