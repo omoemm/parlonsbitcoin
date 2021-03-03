@@ -1,9 +1,10 @@
 import Container from "components/Container";
+import Message from "components/Message";
 import React from 'react'
 
 
 export async function getServerSideProps(context) {
-  const {token} = context.query
+  const { token } = context.query
   return {
     props: {
       authed: token === process.env.TOKEN
@@ -14,10 +15,6 @@ export async function getServerSideProps(context) {
 
 function Mailing() {
   return ("mail")
-}
-
-function Message() {
-  return ("message")
 }
 
 
@@ -44,8 +41,8 @@ export default function Admin({ authed }) {
         <button onClick={() => setState("message")}>📮</button>
       </div>
 
-    {state === "mailing" && <Mailing/>}
-    {state === "message" && <Message/>}
+      {state === "mailing" && <Mailing />}
+      <Message />
 
     </Container>
   )
