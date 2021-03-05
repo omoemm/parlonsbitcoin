@@ -22,7 +22,6 @@ export default function Newsletter() {
       url: "https://api.onearth.be/v1/parlonsbitcoin/mailing",
       data: {
         email: email,
-        token: process.env.TOKEN,
       }
     })
       .then((response) => {
