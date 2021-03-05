@@ -1,17 +1,17 @@
 import React from 'react'
 import { fetchAll } from 'lib/api'
-
+import formatDate from 'lib/date'
 
 function MessagesList({ messages }) {
   return (
     <div className="flex flex-col max-w-2xl items-center mx-auto my-8">
-      <ul>
+      <ul className="space-y-5">
         {messages.map((msg) => {
           const { read, _id, message, createdAt } = msg
           return (
             <li key={_id} className="">
               <div>
-                date read
+              {formatDate(createdAt)}
               </div>
               <div className="prose prose-md">
                 {message}

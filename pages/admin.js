@@ -43,7 +43,7 @@ export default function Admin({ authed, token }) {
       </div>
 
       {state === "mailing" && <Mailing />}
-      <Message token={token} />
+      {state === "message" && <Message token={token} />}
 
     </Container>
   )

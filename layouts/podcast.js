@@ -1,9 +1,8 @@
 import Container from "components/Container";
 import PodcastPlayer from "components/PodcastPlayer";
 import Newsletter from "components/Newsletter";
-import { parseISO, format } from 'date-fns';
-import { fr } from 'date-fns/locale'
 import Scroll from 'react-scroll'
+import formatDate from 'lib/date'
 
 const scroll = Scroll.animateScroll
 
@@ -26,7 +25,7 @@ export default function PodcastLayout({ children, frontMatter }) {
           {frontMatter.title}
         </h1>
         <p className="text-md text-gray-600 min-w-32">
-          {format(parseISO(frontMatter.date), 'dd MMMM yyyy', { locale: fr })}
+          {formatDate(frontMatter.date)}
         </p>
         <PodcastPlayer className="my-4" simplelink={frontMatter.simplelink} />
 
