@@ -38,9 +38,9 @@ export default function Contact() {
 
   return (
     <Container>
-      <div className="flex flex-col justify-center items-center my-8 max-w-2xl mx-auto">
+      <div className="flex flex-col justify-center items-center mb-8 max-w-2xl mx-auto">
         {form.state === "notVerified" &&
-          <div className=" w-full my-2 max-w-lg">
+          <div className=" w-full mb-2 max-w-lg">
             <div className="mb-4 flex justify-center text-gray-600  text-center">Laisse-moi ton contact dans le message si tu veux que je te réponde 📝
             </div>
             <textarea
