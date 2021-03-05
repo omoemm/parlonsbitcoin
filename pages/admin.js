@@ -1,5 +1,6 @@
 import Container from "components/Container";
 import Message from "components/Message";
+import Mailing from "components/Mailing";
 import React from 'react'
 
 
@@ -11,11 +12,6 @@ export async function getServerSideProps(context) {
       token,
     },
   }
-}
-
-
-function Mailing() {
-  return ("mail")
 }
 
 
@@ -42,7 +38,7 @@ export default function Admin({ authed, token }) {
         <button onClick={() => setState("message")}>📮</button>
       </div>
 
-      {state === "mailing" && <Mailing />}
+      {state === "mailing" && <Mailing token={token}/>}
       {state === "message" && <Message token={token} />}
 
     </Container>
