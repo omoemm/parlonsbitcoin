@@ -7,7 +7,8 @@ export async function getServerSideProps(context) {
   const { token } = context.query
   return {
     props: {
-      authed: token === process.env.TOKEN
+      authed: token === process.env.TOKEN,
+      token,
     },
   }
 }
@@ -18,7 +19,7 @@ function Mailing() {
 }
 
 
-export default function Admin({ authed }) {
+export default function Admin({ authed, token }) {
   if (!authed) {
     return (
       <Container
@@ -42,7 +43,7 @@ export default function Admin({ authed }) {
       </div>
 
       {state === "mailing" && <Mailing />}
-      <Message />
+      <Message token={token} />
 
     </Container>
   )
