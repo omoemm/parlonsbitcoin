@@ -22,6 +22,7 @@ const pod2 = [
   "Sonia",
   "Wen Da",
   "Pierre",
+  "Brice",
 ]
 
 const pod1 = [
