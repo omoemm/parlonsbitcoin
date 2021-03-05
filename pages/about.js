@@ -1,7 +1,7 @@
 import Container from 'components/Container'
 
 function MyP({ children }) {
-  return (<p className="text-gray-800  mb-3">
+  return (<p className="text-gray-800  mb-3 text-justify">
     {children}
   </p>
   )
