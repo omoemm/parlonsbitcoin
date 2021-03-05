@@ -15,7 +15,6 @@ export default function Contact() {
       url: "https://api.onearth.be/v1/parlonsbitcoin/message",
       data: {
         message: inputEl.current.value,
-        token: process.env.TOKEN,
       }
     })
       .then((response) => {
