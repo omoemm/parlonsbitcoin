@@ -1,6 +1,6 @@
 import Container from "components/Container";
-import Message from "components/Message";
-import Mailing from "components/Mailing";
+import Message from "components/admin/Message";
+import Mailing from "components/admin/Mailing";
 import React from 'react'
 
 
